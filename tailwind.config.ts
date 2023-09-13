@@ -8,16 +8,7 @@ const config: Config = {
     "./utils/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        brand: {
-          green: "#489248",
-          "white-smoke": "#f2f1ef",
-          "light-green": "#65CE66",
-          "dark-green": "#1D3A35",
-        },
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
