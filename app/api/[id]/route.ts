@@ -8,7 +8,7 @@ type ParamType = {
   };
 };
 
-export async function GET(request: NextRequest, { params }: ParamType) {
+export async function GET(_: NextRequest, { params }: ParamType) {
   try {
     await connectToDB();
 
@@ -29,7 +29,7 @@ export async function GET(request: NextRequest, { params }: ParamType) {
   }
 }
 
-export async function DELETE(request: NextRequest, { params }: ParamType) {
+export async function DELETE(_: NextRequest, { params }: ParamType) {
   try {
     await connectToDB();
     const promptToDelete = await Message.findByIdAndDelete(params.id);
