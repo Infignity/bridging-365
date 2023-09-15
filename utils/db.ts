@@ -17,6 +17,5 @@ export const connectToDB = async () => {
     console.log("=> using new database connection");
   } catch (error) {
     console.log(error);
-    // process.exit(1);
   }
 };
